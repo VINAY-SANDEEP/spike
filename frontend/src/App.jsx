@@ -37,29 +37,121 @@ const sampleDepartments = [
 ];
 
 const sampleFaculty = [
-  { id:1, name:'Dr. Asha Rao', dept:'cse', title:'Associate Professor', spec:'AI & ML', photo:'https://i.pravatar.cc/150?img=11' },
-  { id:2, name:'Prof. Ravi Kumar', dept:'ece', title:'Professor', spec:'VLSI', photo:'https://i.pravatar.cc/150?img=12' },
-  { id:3, name:'Dr. Meera Iyer', dept:'aiml', title:'Assistant Professor', spec:'NLP', photo:'https://i.pravatar.cc/150?img=13' },
-  { id:4, name:'Prof. Suresh N', dept:'mech', title:'Professor', spec:'Thermal', photo:'https://i.pravatar.cc/150?img=14' },
-  { id:5, name:'Dr. Kavita P', dept:'civil', title:'Assistant Professor', spec:'Hydrology', photo:'https://i.pravatar.cc/150?img=15' },
+ { id: 1, name: 'Dr. M. Sreenivasa Reddy', dept: 'General', title: 'Principal', spec: '', photo: 'https://aec.edu.in/Staff_Directory/staff_image/1.jpg' },
+{ id: 2, name: 'Dr. A. Vanathi', dept: 'CSE', title: 'Associate Professor & HOD', spec: '', photo: 'https://aec.edu.in/Staff_Directory/staff_image/2.jpg' },
+{ id: 3, name: 'Dr. M.V. Rajesh', dept: 'CSE', title: 'HOD', spec: '', photo: 'https://aec.edu.in/Staff_Directory/staff_image/3.jpg' },
+{ id: 4, name: 'Dr. Pritam Kumar Das', dept: 'ECE', title: 'Associate Professor', spec: '', photo: 'https://aec.edu.in/Staff_Directory/staff_image/4.jpg' },
+{ id: 5, name: 'Dr. R. Giriprasad', dept: 'IT', title: 'HOD', spec: '', photo: 'https://aec.edu.in/Staff_Directory/staff_image/5.jpg' },
+{ id: 6, name: 'Dr. Selvamalar Nagarajan', dept: 'H&BS', title: 'HOD', spec: '', photo: 'https://aec.edu.in/Staff_Directory/staff_image/6.jpg' },
+{ id: 7, name: 'Dr. N. Visalakshi', dept: 'H&BS', title: 'HOD', spec: '', photo: 'https://aec.edu.in/Staff_Directory/staff_image/7.jpg' },
+{ id: 8, name: 'Dr. B Krishna Kanth', dept: 'Mining Engineering', title: 'HOD', spec: '', photo: 'https://aec.edu.in/Staff_Directory/staff_image/8.jpg' },
+{ id: 9, name: 'Dr. Srinivasa Rao Veeranki', dept: 'EEE', title: 'HOD', spec: '', photo: 'https://aec.edu.in/Staff_Directory/staff_image/9.jpg' },
+{ id: 10, name: 'Dr. G. Suresh', dept: 'CSE', title: 'Professor', spec: '', photo: 'https://aec.edu.in/Staff_Directory/staff_image/10.jpg' }
+
 ];
 
 const sampleEvents = [
-  { id: 'e1', title:'HackFest 2025', date: '2025-10-05', short:'48-hour coding marathon', details:'Open to all students. Prizes, internships and mentorships.' },
-  { id: 'e2', title:'AI Seminar Series', date: '2025-08-20', short:'Talks by industry leaders', details:'Keynotes, workshops, and networking.' },
-  { id: 'e3', title:'TechSymposium', date: '2025-09-30', short:'Research presentations and posters', details:'Students showcase projects and papers.' },
+  {
+    id: 'e1',
+    title: 'Poster Presentation',
+    date: '2025-09-16',
+    short: 'Platform for students to showcase innovative ideas in Computer Science & Engineering',
+    details: 'Encourages creativity, knowledge sharing, and interactive learning. Venue: Room no: 102 Bill Gates Bhavan, First Floor Seminar Hall. Organisers: Dr. A. Phani Sridhar and T. Satya Kumari.'
+  },
+  {
+    id: 'e2',
+    title: 'Code Reto',
+    date: '2025-09-10 to 2025-09-15',
+    short: 'Offline coding competition with two rounds testing problem-solving skills',
+    details: 'Participants can code in C, C++, Python, or Java. Venue: Room No: 021, Bill Gates Bhavan, Ground Floor. Organisers: U. V. Ramesh, Dr. K. Naga Raju, M. Srinu.'
+  },
+  {
+    id: 'e3',
+    title: 'Web diseno',
+    date: '2025-09-10 to 2025-09-15',
+    short: 'Web designing competition creating a 5+ page content-centric website',
+    details: 'Focuses on creativity and technical skills. Venue: Room no: 102 Bill Gates Bhavan, First Floor Seminar Hall. Organisers: Student Coordinators K. Tanoo Sree, V. Siri Chakra, N. Gowri Pravallika.'
+  },
+  {
+    id: 'e4',
+    title: 'Technical Quiz',
+    date: '2025-10-12 to 2025-10-15',
+    short: 'Multi-round technical quiz testing knowledge and logical thinking',
+    details: 'Includes elimination, objective, and coding challenges. Venue: Room no: 227 Bill Gates Bhavan, First Floor Seminar Hall. Organisers: Mr. P. Anil Kumar and others from Andhra University.'
+  },
+  {
+    id: 'e6',
+    title: 'Tech Talk',
+    date: '2025-09-09 to 2025-09-15',
+    short: 'Presentations on emerging IT technologies or innovative IT solutions',
+    details: 'Includes business models, IoT solutions, and software prototypes. Venue: Room no: 113 Bill Gates Bhavan, First Floor Seminar Hall. Organisers: Dr. V. V. Vaitheswaran and others.'
+  },
+  {
+    id: 'e7',
+    title: 'Paper Presentation',
+    date: '2025-09-10 to 2025-09-15',
+    short: 'Formal event showcasing research, ideas, or innovations',
+    details: 'Venue: Room No: 125, Bill Gates Bhavan First Floor R & D. Organisers: R. Padmasri, Mrs. K. Vydehi.'
+  },
+  {
+    id: 'e9',
+    title: 'Aldeathon',
+    date: '2025-09-01 to 2025-09-15',
+    short: 'Presentation of Ideas of Change and working models',
+    details: 'Venue: Visvesvaraya Bhavan, Room No: 228 (Second Floor). Organisers: Mrs. K. Kavya Ramya Sree and multiple coordinators.'
+  },
+  {
+    id: 'e10',
+    title: 'AI SPARKS QUIZ',
+    date: '2025-09-10 to 2025-09-15',
+    short: 'Quiz testing knowledge in AI, ML, Data Science, and emerging tech',
+    details: 'Venue: Visvesvaraya Bhavan (Computer Lab 1 & 3, Ground Floor). Organisers: Roshan Prasad, V Appalakonda.'
+  },
+  {
+    id: 'e11',
+    title: 'MedhaManthan',
+    date: '2025-09-01 to 2025-09-15',
+    short: 'Flagship hackathon to transform ideas into working prototypes',
+    details: 'Themes include AI bots, digital resumes, campus tools, accessibility solutions. Venue: Visweswaraya Bhavan. Organisers: Dr. Maganti Venkatesh and others.'
+  },
 ];
 
 const samplePlacements = {
-  stats: { highest: 28, average: 6.4, placedPercent: 92 },
-  topRecruiters: ['Google', 'Microsoft', 'TCS', 'Amazon', 'Infosys', 'Siemens']
+  "stats": {
+    "highest": 30,
+    "average": 7.1,
+    "placedPercent": 90,
+    "totalPlaced": 2800,
+    "companiesVisited": 220,
+    "medianPackage": 6.0,
+    "lowestPackage": 3.5,
+    "internshipPercent": 75,
+    "highestInternshipStipend": 1.2
+  },
+  "topRecruiters": [
+    "INCREFF","Dmart","ASBL (Ashoka Builders)","Infosys","Sandhya Aqua","VSTAR","HSBC Technology India","Quest Global","The Indian Cements","ComTec Information Systems","ZF Rane Automotive","Praxsol Engineering Pvt Ltd","Aditya Degree College","Sharda Motors Industries","SuryaTech Solutions","Clove Technologies","Ninjacart","7.ai","Northern Arc","Dunboxed Solution Pvt. Ltd","DigitalTrust","Milekal","NCR ATLEOS","Deloitte USI | Cyber Gurukul","Prescience Decision Solutions","TCS NQT","Verizon","HPE (Hewlett Packard Enterprises)","Pennant","Verity Knowledge Solutions","Hitachi Industrial Equipment Systems Co., Ltd","Heritage","UiPath","KYB Motorcycle India Pvt Ltd","GE Vernova (Meridium Labs)","DAISEKI Co., Ltd","Akrivia HCM","Credera(TA Digital)","Tapplent","Servicenow","TCS Pega","HP (Hewlett Packard)","SOTI","Apxor","JMC Co., Ltd","Godrej Jersey","Hitachi KE Systems, Ltd","TOYOTA Connected Corporation","SANSYU","DeltaX","ADTEC Plasma","Darwinbox","Iquadra","Tejas Networks","Zopsmart","Walmart"
+
+  ]
+
 }
 
 const sampleClubs = [
-  { id:'tech', name:'Tech Club', badge:'🔧'},
-  { id:'robotics', name:'Robotics Club', badge:'🤖'},
-  { id:'cultural', name:'Cultural Club', badge:'🎭'},
-  { id:'drone', name:'Drone Club', badge:'🛩️'},
+  { id:'webapps', name:'WebApps Club', badge:'💻'},
+{ id:'automobile', name:'Automobile Club', badge:'🚗'},
+{ id:'events', name:'Events Club', badge:'🎉'},
+{ id:'robotics', name:'Robotics Club', badge:'🤖'},
+{ id:'media', name:'Media Club', badge:'🎥'},
+{ id:'cultural', name:'Cultural Club', badge:'🎭'},
+{ id:'photography', name:'Photography Club', badge:'📸'},
+{ id:'dance', name:'Dance Club', badge:'💃'},
+{ id:'coding', name:'Coding Club', badge:'👨‍💻'},
+{ id:'debating', name:'Debating Club', badge:'🗣️'},
+{ id:'gaming', name:'Gaming Club', badge:'🎮'},
+{ id:'entrepreneurship', name:'Entrepreneurship Club', badge:'💼'},
+{ id:'aiml', name:'AI & ML Club', badge:'🧠'},
+{ id:'drama', name:'Drama Club', badge:'🎬'},
+{ id:'music', name:'Music Club', badge:'🎶'},
+
 ]
 
 const App = () => {
@@ -82,9 +174,15 @@ const App = () => {
   // Bus filter
   const [routeFilter, setRouteFilter] = useState('');
   const buses = [
-    {id:1, route:'A1', time:'7:30 AM', status:'On Time'},
-    {id:2, route:'B4', time:'7:45 AM', status:'Delayed'},
-    {id:3, route:'C2', time:'8:00 AM', status:'On Time'},
+    {id:1, route:'VIRAVA', time:'18 min', status:'On Time'},
+  {id:2, route:'YANAM', time:'35 min', status:'On Time'},
+  {id:3, route:'MACHAVARAM', time:'35 min', status:'On Time'},
+  {id:4, route:'RAMAVARAM RAYAVARAM', time:'50 min', status:'On Time'},
+  {id:5, route:'PEDDAPURAM', time:'32 min', status:'On Time'},
+  {id:6, route:'JAGGAMPETA', time:'24 min', status:'On Time'},
+  {id:7, route:'DHARMAVARAM', time:'30 min', status:'On Time'},
+  {id:8, route:'RAMANAKKAPETA NAGULAPALLI', time:'40 min', status:'On Time'},
+  {id:9, route:'UPPADA', time:'--', status:'On Time'},
   ];
 
   // Student portal mock
@@ -169,8 +267,8 @@ const App = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
-                <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight drop-shadow">Shaping Future Engineers</h1>
-                <p className="mt-4 text-lg sm:text-xl opacity-90 max-w-xl">A modern engineering college fostering innovation, research, and industry-ready skills. Join a community that learns by doing.</p>
+                <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight drop-shadow">Aditya University</h1>
+                <p className="mt-4 text-lg sm:text-xl opacity-90 max-w-xl">Aditya University is a state-private university located in Surampalem, Kakinada district, Andhra Pradesh. It was formed under the Andhra Pradesh Private Universities Act, 2016, and evolved from the well-established Aditya Engineering College.</p>
                 <div className="mt-6 flex gap-3">
                   <a href="#admissions" className="px-6 py-3 rounded-lg bg-white text-indigo-700 font-semibold shadow hover:scale-[1.03] transition">Apply Now</a>
                   <a href="#departments" className="px-6 py-3 rounded-lg bg-white/20 border border-white/30 hover:bg-white/30 transition">Explore Departments</a>
@@ -184,13 +282,12 @@ const App = () => {
 
               <div className="relative">
                 <div className="rounded-2xl p-4 bg-white/20 backdrop-blur-md shadow-2xl ring-1 ring-white/10">
-                  <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=123456" alt="campus" className="w-full rounded-xl object-cover h-64 sm:h-80" />
+                  <img src="https://i.ytimg.com/vi/OQ3uTuvBVD8/maxresdefault.jpg" alt="campus" className="w-full rounded-xl object-cover h-64 sm:h-80" />
                 </div>
                 <div className="absolute -bottom-6 left-6 bg-white rounded-xl p-4 shadow-lg flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold">A+</div>
                   <div>
-                    <div className="text-sm font-semibold">Ranked Top 50</div>
-                    <div className="text-xs text-slate-700 dark:text-slate-200">Engineering colleges — 2025</div>
+                    <div className="text-sm font-semibold text-indigo-500">Ranked Top 50</div>
                   </div>
                 </div>
               </div>
@@ -204,14 +301,39 @@ const App = () => {
         </section>
 
         {/* Quick links */}
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            <a href="#admissions" className="p-4 rounded-xl bg-gradient-to-r from-white to-white/30 border border-slate-100 dark:border-slate-800 shadow hover:scale-[1.02] transition">Admissions</a>
-            <a href="#courses" className="p-4 rounded-xl bg-gradient-to-r from-white to-white/30 border border-slate-100 dark:border-slate-800 shadow hover:scale-[1.02] transition">Courses</a>
-            <a href="#events" className="p-4 rounded-xl bg-gradient-to-r from-white to-white/30 border border-slate-100 dark:border-slate-800 shadow hover:scale-[1.02] transition">Events</a>
-            <a href="#contact" className="p-4 rounded-xl bg-gradient-to-r from-white to-white/30 border border-slate-100 dark:border-slate-800 shadow hover:scale-[1.02] transition">Contact</a>
-          </div>
-        </section>
+       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+    <a
+      href="#admissions"
+      className="p-5 rounded-2xl bg-gradient-to-tr from-blue-500/90 to-cyan-400/80 text-white font-semibold shadow-lg 
+                 backdrop-blur-lg border border-white/20 hover:shadow-blue-500/40 hover:scale-105 transition-all duration-300"
+    >
+      Admissions
+    </a>
+    <a
+      href="#courses"
+      className="p-5 rounded-2xl bg-gradient-to-tr from-pink-500/90 to-rose-400/80 text-white font-semibold shadow-lg 
+                 backdrop-blur-lg border border-white/20 hover:shadow-pink-500/40 hover:scale-105 transition-all duration-300"
+    >
+      Courses
+    </a>
+    <a
+      href="#events"
+      className="p-5 rounded-2xl bg-gradient-to-tr from-green-500/90 to-emerald-400/80 text-white font-semibold shadow-lg 
+                 backdrop-blur-lg border border-white/20 hover:shadow-green-500/40 hover:scale-105 transition-all duration-300"
+    >
+      Events
+    </a>
+    <a
+      href="#contact"
+      className="p-5 rounded-2xl bg-gradient-to-tr from-purple-500/90 to-indigo-400/80 text-white font-semibold shadow-lg 
+                 backdrop-blur-lg border border-white/20 hover:shadow-purple-500/40 hover:scale-105 transition-all duration-300"
+    >
+      Contact
+    </a>
+  </div>
+</section>
+
 
         {/* Departments */}
         <section id="departments" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -402,8 +524,14 @@ const App = () => {
             <div className="p-6 rounded-2xl bg-white dark:bg-slate-800 shadow">
               <h3 className="font-semibold">Gallery</h3>
               <div className="mt-3 grid grid-cols-2 gap-2">
-                <img src="https://images.unsplash.com/photo-1503437313881-503a91226421?q=80&w=800&auto=format&fit=crop&s=abc" className="w-full h-24 object-cover rounded" />
-                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop&s=def" className="w-full h-24 object-cover rounded" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN142xhWxYgKH2Sy6KIJxMn9pKnDBavcRN2A&s" className="w-full h-24 object-cover rounded" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIPgYrutbIwy2m-8dhqDrQbLQgo8tCirQVbg&s" className="w-full h-24 object-cover rounded" /> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4M-2tccyWhe9NqZhLs8PagdSkrx7rIcq1IZfH-P8ezV9SGhEBRzC-7ynNgKisxVX-yQk&usqp=CAU" className="w-full h-24 object-cover rounded" /> 
+                <img src="https://aec.edu.in/images/gallery/VEDA5.JPG" className="w-full h-24 object-cover rounded" /> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5_fA6Ww1OUzPOfC3Zyn0yiwOWhwOZOjv5hg&s" className="w-full h-24 object-cover rounded" /> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOyvK9Chx3bMmcsulVDwqa0O8Q1NPTo9_wcw&s" className="w-full h-24 object-cover rounded" /> 
+                <img src="https://media.licdn.com/dms/image/v2/D4D22AQG4pi2litTblw/feedshare-shrink_800/B4DZiIOinUHsAg-/0/1754632172550?e=2147483647&v=beta&t=WUG1n6sFHQmC5VkN1vAJjbahe5yUkdQNqCUYMERXF9A" className="w-full h-24 object-cover rounded" /> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4M-2tccyWhe9NqZhLs8PagdSkrx7rIcq1IZfH-P8ezV9SGhEBRzC-7ynNgKisxVX-yQk&usqp=CAU" className="w-full h-24 object-cover rounded" /> 
               </div>
             </div>
           </div>
