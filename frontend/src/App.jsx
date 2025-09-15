@@ -33,7 +33,7 @@ const sampleDepartments = [
   { id: 'mech', name: 'Mechanical', icon: '⚙️', desc: 'Thermal, Design, Manufacturing' },
   { id: 'civil', name: 'Civil', icon: '🏗️', desc: 'Structures, Geotech, Env. Eng' },
   { id: 'aiml', name: 'AIML', icon: '🤖', desc: 'Machine Learning, Data Science' },
-  { id: 'chem', name: 'Chemical', icon: '⚗️', desc: 'Process, Materials' },
+  { id: 'chem', name: 'IOT', icon: '💡', desc: 'Connections' },
 ];
 
 const sampleFaculty = [
@@ -211,7 +211,7 @@ const App = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-4">
               <a className="flex items-center gap-3" href="#home">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-cyan-400 flex items-center justify-center text-white font-bold shadow-lg">E</div>
+                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-cyan-400 flex items-center justify-center text-white font-bold shadow-lg">A</div>
                 <div className="hidden sm:block">
                   <div className="font-semibold">Aditya University </div>
                   <div className="text-xs text-slate-500 dark:text-slate-400">Shaping Future Engineers</div>
@@ -253,7 +253,7 @@ const App = () => {
               <a href="#courses">Courses</a>
               <a href="#events">Events</a>
               <a href="#placements">Placements</a>
-              <a href="#student-life">Student Life</a>
+              <a href="#student-life">Activities</a>
               <a href="#contact">Contact</a>
             </div>
           </div>
@@ -500,7 +500,7 @@ const App = () => {
         {/* Student Life */}
         <section id="student-life" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-semibold">Student Life</h2>
+            <h2 className="text-2xl font-semibold">Activities</h2>
             <a className="text-sm text-indigo-600" href="#clubs">Clubs & Societies →</a>
           </div>
 
@@ -522,7 +522,7 @@ const App = () => {
               </ul>
             </div>
             <div className="p-6 rounded-2xl bg-white dark:bg-slate-800 shadow">
-              <h3 className="font-semibold">Gallery</h3>
+              <h3 className="font-semibold">Achivements</h3>
               <div className="mt-3 grid grid-cols-2 gap-2">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN142xhWxYgKH2Sy6KIJxMn9pKnDBavcRN2A&s" className="w-full h-24 object-cover rounded" />
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIPgYrutbIwy2m-8dhqDrQbLQgo8tCirQVbg&s" className="w-full h-24 object-cover rounded" /> 
@@ -538,32 +538,54 @@ const App = () => {
         </section>
 
         {/* Library & Resources */}
-        <section id="library" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-semibold">Library & Resources</h2>
-            <a className="text-sm text-indigo-600" href="#">Digital Library →</a>
-          </div>
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-2xl bg-white dark:bg-slate-800 shadow md:col-span-2">
-              <h3 className="font-semibold">Search E-Resources</h3>
-              <div className="mt-3 flex gap-2">
-                <input className="flex-1 px-3 py-2 rounded-md bg-white dark:bg-slate-700" placeholder="Search books, journals, notes" />
-                <button className="px-4 py-2 rounded bg-indigo-600 text-white">Search</button>
-              </div>
+        <section id="library" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Library & Resources</h2>
+    <a
+      className="text-sm text-indigo-600 hover:underline transition"
+      href="#"
+    >
+      Digital Library →
+    </a>
+  </div>
 
-              <div className="mt-6 text-sm text-slate-600 dark:text-slate-300">Downloadable syllabus, notes, and past papers are available for registered students.</div>
-            </div>
+  <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+    {/* Search + Info Box */}
+    <div className="p-8 rounded-xl bg-white dark:bg-slate-800 shadow-lg md:col-span-2">
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Search E-Resources</h3>
 
-            <div className="p-6 rounded-2xl bg-white dark:bg-slate-800 shadow">
-              <h3 className="font-semibold">Popular Resources</h3>
-              <ul className="mt-3 text-sm text-slate-600 dark:text-slate-300">
-                <li>Data Structures Notes</li>
-                <li>Signals & Systems Past Papers</li>
-                <li>AI Lab Manuals</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+      <div className="mt-4 flex flex-col sm:flex-row gap-3">
+        <input
+          type="text"
+          placeholder="Search books, journals, notes..."
+          className="flex-1 px-4 py-2 rounded-md border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        />
+        
+        <a
+          href="https://resources-frontend-nine.vercel.app/"
+          className="px-5 py-2.5 rounded-md bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition text-center"
+        >
+          Get Notes
+        </a>
+      </div>
+
+      <p className="mt-6 text-sm text-gray-600 dark:text-slate-300">
+        Downloadable syllabus, notes, and past papers are available for registered students.
+      </p>
+    </div>
+
+    {/* Popular Resources */}
+    <div className="p-8 rounded-xl bg-white dark:bg-slate-800 shadow-lg">
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Popular Resources</h3>
+      <ul className="mt-4 space-y-2 text-sm text-gray-700 dark:text-slate-300 list-disc list-inside">
+        <li>Data Structures Notes</li>
+        <li>Signals & Systems Past Papers</li>
+        <li>AI Lab Manuals</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
         {/* Bus Details */}
         <section id="bus-details" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -620,7 +642,7 @@ const App = () => {
             </form>
           ) : (
             <div className="mt-4 p-4 rounded-lg bg-white dark:bg-slate-800 shadow">
-              <div className="font-semibold">{student.name} ({student.roll})</div>
+              <div className="font-semibold">Student : ({student.roll})</div>
               <div className="text-sm">Branch: {student.branch}</div>
               <div className="text-sm">CGPA: {student.cgpa}</div>
               <div className="text-sm">Attendance: {student.attendance}</div>
@@ -663,7 +685,6 @@ const App = () => {
               <div className="font-semibold">Evoke Engineering</div>
               <div className="text-sm text-slate-500">© 2025. All rights reserved.</div>
             </div>
-            <div className="text-sm text-slate-500">Made with ❤️ for students</div>
           </div>
         </footer>
 
